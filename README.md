@@ -54,3 +54,10 @@ To learn React, check out the [React documentation](https://reactjs.org/).
     npm install react router-dom
 
 https://reactrouter.com/en/6.5.0# React-app-base
+
+## Branch Separation
+
+    git checkout -b lazyload-rrd-v6
+
+then 
+    git add . and git commit -m "....."
