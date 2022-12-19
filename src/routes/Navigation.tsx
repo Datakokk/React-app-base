@@ -15,9 +15,7 @@ export const Navigation = () => {
                         {
                             routes.map( ({ name, to}) => 
                                     <li key={ name }> 
-                                        <NavLink  
-                                            to={ to } 
-                                            className={({ isActive }) => isActive ? 'nav-active' : ''}> { name }</NavLink>
+                                        <NavLink to={ to } className={({ isActive }) => isActive ? 'nav-active' : ''}> { name }</NavLink>
                                     </li>
                                 )
                         }
@@ -26,11 +24,7 @@ export const Navigation = () => {
                     
                 <Routes>
                     {
-                        routes.map( ({ path, Component }) => <Route 
-                                                                key={ path } 
-                                                                path={ path } 
-                                                                element={ <Component /> }
-                                                            />)
+                        routes.map( ({ path, Component }) => <Route key={ path } path={ path } element={ <Component /> }/>)
 
                     }
 
