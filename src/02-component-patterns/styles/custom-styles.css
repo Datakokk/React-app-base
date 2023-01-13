@@ -11,6 +11,11 @@
     font-weight: bold;
 }
 
+.text-ligth {
+    font-weight:bold;
+    font-size: .5rem;
+}
+
 .custom-image {
     border-radius: 20px;
     padding: 10px;
@@ -20,4 +25,10 @@
 .custom-buttons > button, .custom-buttons > div{
     border-color: #fff;
     color: #fff;
+}
+
+.shopping-card {
+    position: fixed;
+    right: 10px;
+    top: 0px;
 }
