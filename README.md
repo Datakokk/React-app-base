@@ -54,3 +54,14 @@ To learn React, check out the [React documentation](https://reactjs.org/).
     npm install react router-dom
 
 https://reactrouter.com/en/6.5.0# React-app-base
+
+
+### Github
+
+to create a new branch
+
+    git checkout -b 'name of branch'
+
+to check which branch you are
+
+    git branch
