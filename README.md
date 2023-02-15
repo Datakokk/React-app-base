@@ -54,3 +54,30 @@ To learn React, check out the [React documentation](https://reactjs.org/).
     npm install react router-dom
 
 https://reactrouter.com/en/6.5.0# React-app-base
+
+# Form
+
+## Form Email traditional validation
+    Email validation - customHook
+    is-valid-email.ts
+    const isValidEmail = ( email: string ) => {
+          const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          return re.test(email);
+    }
+
+## Formik
+    https://formik.org/docs/overview#installation
+    
+    yarn add formik
+
+### Formik Tutorial
+
+    https://formik.org/docs/tutorial
+
+### Formik Email validation
+    formik-email-validation.ts
+    if (!values.email) {
+        errors.email = 'Required';
+      } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+        errors.email = 'Invalid email address';
+    }
