@@ -1,5 +1,7 @@
 import { BrowserRouter, Navigate, NavLink, Route, Routes } from "react-router-dom";
-//import { ShoppingPage } from "../02-component-patterns/pages/ShoppingPage";
+
+import { FormikBasicPage } from "../03-forms/pages/FormikBasicPage";
+import { RegisterPage } from "../03-forms/pages/RegisterPage";
 
 import logo from  '../logo.svg';
 
@@ -11,23 +13,23 @@ export const Navigation = () => {
                 <img src={ logo } alt="React logo" />
                 <ul>
                     <li>
-                        <NavLink to="/" className={({ isActive } )=> isActive ? 'nav-active' : '' }>Shopping</NavLink>
+                        <NavLink to="/register" className={({ isActive } )=> isActive ? 'nav-active' : '' }>Register Page</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/lazy2" className={({ isActive } )=> isActive ? 'nav-active' : '' }>Lazy 2</NavLink>
+                        <NavLink to="/formik-basic" className={({ isActive } )=> isActive ? 'nav-active' : '' }>Formik Basic Page</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/lazy3" className={({ isActive } )=> isActive ? 'nav-active' : '' }>Lazy 3</NavLink>
+                        <NavLink to="/lazy3" className={({ isActive } )=> isActive ? 'nav-active' : '' }>Users</NavLink>
                     </li>
                 </ul>
             </nav>
         
             <Routes>
-                {/* <Route path="/" element={<ShoppingPage />}/> */}
-                <Route path="lazy2" element={<h1>Home</h1>}/>
-                <Route path="lazy3" element={<h1>Home</h1>}/>
+                <Route path="/register" element={<RegisterPage />}/>
+                <Route path="formik-basic" element={<FormikBasicPage />}/>
+                <Route path="lazy3" element={<h1>Users</h1>}/>
 
-                <Route path="/*" element={<Navigate to="/lazy1" replace />}/>
+                <Route path="/" element={<Navigate to="/lazy3" replace />}/>
             </Routes>
         </div>
 
