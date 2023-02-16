@@ -35,7 +35,7 @@ export const Navigation = () => {
                 <Route path="formik-yup" element={<FormikYupPage />}/>
                 <Route path="formik-components" element={<FormikComponents />}/>
 
-                <Route path="/" element={<Navigate to="/lazy3" replace />}/>
+                <Route path="/" element={<Navigate to="/formik-components" replace />}/>
             </Routes>
         </div>
 
