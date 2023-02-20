@@ -3,7 +3,7 @@ import { ErrorMessage, useField } from "formik"
 interface Props {
     label: string;
     name:  string;
-    type?: 'text' | 'email' | 'password'| 'select';
+    type?: 'text' | 'email' | 'password';
     placeholder?: string;
     [x: string]: any;
 }
